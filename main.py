@@ -4,7 +4,7 @@ from plotting import plot
 import matplotlib.pyplot as plt
 
 def main():
-    sample_size = [20, 1000]
+    sample_size = [20, 100]
 
     distribustions = {
         "Normal": generate_normal,
