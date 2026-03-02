@@ -1,5 +1,5 @@
 from distributions import *
-from calculations import calculate
+from calculations import calculate, calculate_teor
 from plotting import plot
 import matplotlib.pyplot as plt
 
@@ -29,6 +29,7 @@ def main():
             std_frac = np.std(frac_outliers)
             print(f"{name} n={n}:")
             print(f"frac={round(E_frac, 2)}, std={round(std_frac, 2)}")
+            print(f"Teor frac={round(calculate_teor(name), 2)}")
 
     plt.show()
 
